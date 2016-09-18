@@ -4,37 +4,32 @@
 *
 */
 
-/* eslint no-unused-vars: 0 */
-import React, { PropTypes } from 'react';
+import React, { PropTypes, Children } from 'react';
 import styles from './styles.css';
-import classNames from 'react-classnames';
 
-const Button = (props) =>
-  <button className={styles.button} classNames={[props.color, props.size]}>
-    {props.text}
-    {props.children}
-  </button>;
+import classNames from 'classnames';
+
+const Button = (props) => {
+  const buttonClasses = classNames(
+    styles.button, props.size, props.color
+  );
+  if (props.href) {
+    button = <a className={buttonClasses} href={props.href} onClick={props.onClick}>{props.label} {Children.toArray(props.children)} </a>;
+  }
+  let button = <button className={buttonClasses} onClick={props.onClick}>{props.label} {props.children}</button>;
+  return button;
+};
 
 Button.propTypes = {
-  color: PropTypes.oneOf([
-    'primary',
-    'gray',
-    'hollow',
-  ]),
-  size: PropTypes.oneOf([
-    'small',
-    'large',
-    'fullWidth',
-    'normal',
-  ]),
-  text: PropTypes.string,
+  color: PropTypes.oneOf(['pink', 'hollow']),
+  size: PropTypes.oneOf(['small', 'large']),
+  classNames: PropTypes.array,
+  label: PropTypes.string,
   children: PropTypes.node,
 };
 
 Button.defaultProps = {
-  text: 'Button',
-  color: 'MintGreen',
-  size: 'normal',
+  label: 'Button',
 };
 
 export default Button;

@@ -16,7 +16,6 @@ import H4 from 'components/H4';
 import H5 from 'components/H5';
 import H6 from 'components/H6';
 import P from 'components/P';
-import Button from 'components/Button';
 
 
 import styles from './styles.css';
@@ -66,7 +65,6 @@ export default class Typography extends Component { // eslint-disable-line react
             <P content={sectionParagraphContent} />
           </div>
           <div className={styles.pageAside}>
-            <Button />
             <code>
               Code
             </code>
