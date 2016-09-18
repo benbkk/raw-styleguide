@@ -1,0 +1,12 @@
+.appHeader { /* stylelint-disable */
+  position: fixed;
+  min-height: 55px;
+  width:100%;
+  top:0;
+  left:0;
+  background: #282c34;
+  padding-left: 18px;
+  padding-right: 18px;
+  z-index:9;
+  border-bottom: 1px solid gray(15%);
+}

@@ -1,0 +1,11 @@
+.appFooter { /* stylelint-disable */
+  padding: 18px 24px 36px;
+  background-color: color(#282C34 lightness(20%));
+}
+
+.appFooter p {
+  font-size: 13px;
+  text-align: left;
+  margin: 0;
+  color: color(#95a5a6 alpha(-30%));
+}

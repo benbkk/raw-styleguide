@@ -4,6 +4,54 @@
  * App container styles
  */
 
-.container {
-  display: block;
+/* Lost Config */
+
+@lost gutter 18px;
+
+@custom-media --small-viewport (max-width: 600px);
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+body > div,
+.appWrapper {
+  height: 100%;
+}
+
+article {
+  min-height: 100%;
+}
+
+section {
+  overflow-y: auto;
+  padding: 24px;
+  clear: fix;
+}
+
+hr {
+  border-color: color(#ECF0F1 alpha(20%));
+}
+
+/* Typography */
+
+html {
+  font-size: 18px;
+}
+
+body { /* stylelint-disable */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-smoothing: antialiased;
+  color: gray(35%);
+}
+
+b,
+em {
+  font-weight: 700;
 }

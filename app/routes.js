@@ -19,19 +19,19 @@ export default function createRoutes(store) {
   return [
     {
       path: '/',
-      name: 'home',
-      getComponent(nextState, cb) {
-        const importModules = Promise.all([
-          System.import('containers/HomePage'),
-        ]);
-
-        const renderRoute = loadModule(cb);
-
-        importModules.then(([component]) => {
-          renderRoute(component);
-        });
-
-        importModules.catch(errorLoading);
+      name: 'homePage',
+      getComponent(location, cb) {
+        System.import('containers/HomePage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: '/typography',
+      name: 'typography',
+      getComponent(location, cb) {
+        System.import('containers/Typography')
+          .then(loadModule(cb))
+          .catch(errorLoading);
       },
     }, {
       path: '*',

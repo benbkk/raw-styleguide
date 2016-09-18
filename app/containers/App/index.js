@@ -11,20 +11,22 @@
  * the linting exception.
  */
 
-import React from 'react';
-
+import React, { Children, PropTypes } from 'react';
+import AppHeader from 'components/AppHeader';
+import AppFooter from 'components/AppFooter';
 import styles from './styles.css';
 
 export default class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   static propTypes = {
-    children: React.PropTypes.node,
+    children: PropTypes.node,
   };
 
   render() {
     return (
-      <div className={styles.container}>
-        {React.Children.toArray(this.props.children)}
+      <div className={styles.appWrapper}>
+        <AppHeader />
+        {Children.toArray(this.props.children)}
+        <AppFooter />
       </div>
     );
   }

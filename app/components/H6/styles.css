@@ -1,0 +1,7 @@
+h6,
+.h6 { /* stylelint-disable */
+  font-size: 19px;
+  margin: 0 0 16px;
+  color: gray(25%);
+  letter-spacing: -0.5px;
+}

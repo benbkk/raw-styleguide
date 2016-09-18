@@ -9,6 +9,12 @@ const webpack = require('webpack');
 const cssnext = require('postcss-cssnext');
 const postcssFocus = require('postcss-focus');
 const postcssReporter = require('postcss-reporter');
+const postcssRuckSack = require('rucksack-css');
+const postcssPxtorem = require('postcss-pxtorem');
+const postcssFontSmoothing = require('postcss-font-smoothing');
+const postcssHidden = require('postcss-hidden');
+const postcssLost = require('lost');
+const postcssInlineSvg = require('postcss-inline-svg');
 
 module.exports = (options) => ({
   entry: options.entry,
@@ -79,6 +85,12 @@ module.exports = (options) => ({
     postcssReporter({ // Posts messages from plugins to the terminal
       clearMessages: true,
     }),
+    postcssPxtorem(),
+    postcssFontSmoothing(),
+    postcssHidden(),
+    postcssRuckSack(),
+    postcssLost(),
+    postcssInlineSvg(),
   ],
   resolve: {
     modules: ['app', 'node_modules'],

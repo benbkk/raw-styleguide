@@ -12,14 +12,16 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
+import PageHeader from 'components/PageHeader';
 
 export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
-
   render() {
+    const pageHeadline = <FormattedMessage {...messages.pageHeadline} />;
+    const pageSubHeadline = <FormattedMessage {...messages.pageSubHeadline} />;
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <article>
+        <PageHeader title={pageHeadline} content={pageSubHeadline} />
+      </article>
     );
   }
 }

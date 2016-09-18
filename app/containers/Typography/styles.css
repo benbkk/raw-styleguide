@@ -1,0 +1,12 @@
+.pink {
+  color: #FF38A2;
+}
+
+@media (min-width: 600px) {
+  .mainContent { /* stylelint-disable */
+    lost-column: 4/6;
+  }
+  .asideContent { 
+    lost-column: 2/6;
+  }
+}

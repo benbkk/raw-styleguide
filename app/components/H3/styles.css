@@ -1,0 +1,6 @@
+.h3 { /* stylelint-disable */
+  font-size: responsive 36px 45px;
+  margin: 20px 0;
+  letter-spacing: -2px;
+  color: gray(25%);
+}

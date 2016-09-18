@@ -1,0 +1,14 @@
+.appLogo { /* stylelint-disable */
+  display:inline-block;
+  vertical-align:middle;
+  margin-top:7px;
+  width: 123px;
+  height: 40px;
+  background: svg-load(./logo.svg, fill: #FFF, stroke: none);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.srOnly {
+  display: hidden;
+}

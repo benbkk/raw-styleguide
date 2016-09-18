@@ -1,0 +1,7 @@
+h5,
+.h5 { /* stylelint-disable */
+  font-size: 28px;
+  margin: 18px 0 18px;
+  letter-spacing: -1px;
+  color: gray(25%);
+}
