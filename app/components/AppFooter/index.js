@@ -14,8 +14,8 @@ const authorInfo = <FormattedMessage {...messages.authorMessage} />;
 
 const AppFooter = () =>
   <footer className={styles.appFooter}>
-    <p className={styles.authorMessage}>{copyrightText}</p>
     <p className={styles.copyrightMessage}>{authorInfo}</p>
+    <p className={styles.authorMessage}>{copyrightText}</p>
   </footer>;
 
 export default AppFooter;

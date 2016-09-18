@@ -12,6 +12,7 @@
  */
 
 import React, { Children, PropTypes } from 'react';
+import Helmet from 'react-helmet';
 import AppHeader from 'components/AppHeader';
 import AppFooter from 'components/AppFooter';
 import styles from './styles.css';
@@ -24,6 +25,13 @@ export default class App extends React.Component { // eslint-disable-line react/
   render() {
     return (
       <div className={styles.appWrapper}>
+        <Helmet
+          titleTemplate="%s | The RawGuide to Style"
+          defaultTitle="The RawGuide to Style | by Rawpixel WebDev"
+          meta={[
+            { name: 'description', content: 'Rawpixel react UI components library, for internal use only.' },
+          ]}
+        />
         <AppHeader />
         {Children.toArray(this.props.children)}
         <AppFooter />

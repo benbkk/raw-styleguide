@@ -9,17 +9,24 @@
  * the linting exception.
  */
 
-import React from 'react';
+import React, { Component } from 'react';
+import Helmet from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import PageHeader from 'components/PageHeader';
 
-export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
+export default class HomePage extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     const pageHeadline = <FormattedMessage {...messages.pageHeadline} />;
     const pageSubHeadline = <FormattedMessage {...messages.pageSubHeadline} />;
     return (
       <article>
+        <Helmet
+          title="The RawGuide to Style | by Rawpixel WebDev"
+          meta={[
+            { name: 'description', content: 'A React.JS UI Components Library for Rawpixel Ltd. web projects. For internal use only.' },
+          ]}
+        />
         <PageHeader title={pageHeadline} content={pageSubHeadline} />
       </article>
     );
