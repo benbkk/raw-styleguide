@@ -49,6 +49,7 @@ body { /* stylelint-disable */
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-smoothing: antialiased;
   color: gray(35%);
+  line-height: 1.45;
 }
 
 b,

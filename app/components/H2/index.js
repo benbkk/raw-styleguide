@@ -4,13 +4,13 @@
 *
 */
 
-import React, { PropTypes, Children } from 'react';
+import React, { PropTypes } from 'react';
 import styles from './styles.css';
 
 const H2 = (props) =>
   <h2 className={styles.h2}>
     {props.title}
-    {Children.toArray(props.children)}
+    {props.children}
   </h2>;
 
 H2.propTypes = {

@@ -2,11 +2,19 @@
   color: #FF38A2;
 }
 
-@media (min-width: 600px) {
+.greenMint {
+  color: #3C9;
+}
+
+.highLighted {
+  background: yellow;
+}
+
+@media (min-width: 767px) {
   .mainContent { /* stylelint-disable */
     lost-column: 4/6;
   }
-  .asideContent { 
+  .asideContent {
     lost-column: 2/6;
   }
 }

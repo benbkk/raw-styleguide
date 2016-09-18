@@ -5,7 +5,7 @@
 */
 
 /* eslint-disable no-unused-vars */
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes } from 'react';
 import styles from './styles.css';
 
 const H1 = (props) => {
@@ -14,11 +14,13 @@ const H1 = (props) => {
   return (
     <h1 className={headingStyle}>
       {props.title}
+      {props.children}
     </h1>
   );
 };
 
 H1.propTypes = {
+  children: PropTypes.node,
   title: PropTypes.node,
   isUpperCase: (props, propName, componentName) => {
     Object.assign({}, props);
