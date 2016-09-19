@@ -33,7 +33,9 @@ export default class App extends React.Component { // eslint-disable-line react/
             { name: 'description', content: 'Rawpixel react UI components library, for internal use only.' },
           ]}
         />
-        <AppHeader><Logo /></AppHeader>
+        <AppHeader>
+          <Logo />
+        </AppHeader>
         {this.props.children}
         <AppFooter />
       </div>
