@@ -4,14 +4,12 @@
 *
 */
 
-import React, { Children, PropTypes } from 'react';
-import Logo from 'components/Logo';
+import React, { PropTypes } from 'react';
 import styles from './styles.css';
 
 const AppHeader = (props) =>
-  <header className={styles.appHeader} {...props}>
-    <Logo />
-    {Children.toArray(props.children)}
+  <header className={styles.appHeader}>
+    {props.children}
   </header>;
 
 AppHeader.propTypes = {

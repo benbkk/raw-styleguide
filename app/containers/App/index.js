@@ -11,9 +11,10 @@
  * the linting exception.
  */
 
-import React, { Children, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import AppHeader from 'components/AppHeader';
+import Logo from 'components/Logo';
 import AppFooter from 'components/AppFooter';
 import styles from './styles.css';
 
@@ -32,8 +33,8 @@ export default class App extends React.Component { // eslint-disable-line react/
             { name: 'description', content: 'Rawpixel react UI components library, for internal use only.' },
           ]}
         />
-        <AppHeader />
-        {Children.toArray(this.props.children)}
+        <AppHeader><Logo /></AppHeader>
+        {this.props.children}
         <AppFooter />
       </div>
     );

@@ -11,14 +11,13 @@
 
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
 import PageHeader from 'components/PageHeader';
+import H1 from 'components/H1';
+import P from 'components/P';
+import styles from './styles.css';
 
 export default class HomePage extends Component { // eslint-disable-line react/prefer-stateless-function
   render() {
-    const pageHeadline = <FormattedMessage {...messages.pageHeadline} />;
-    const pageSubHeadline = <FormattedMessage {...messages.pageSubHeadline} />;
     return (
       <article>
         <Helmet
@@ -27,7 +26,10 @@ export default class HomePage extends Component { // eslint-disable-line react/p
             { name: 'description', content: 'A React.JS UI Components Library for Rawpixel Ltd. web projects. For internal use only.' },
           ]}
         />
-        <PageHeader title={pageHeadline} content={pageSubHeadline} />
+        <PageHeader>
+          <H1>The <span className={styles.pink}>Raw</span>Guide to Style</H1>
+          <P>v1.0.0 - September 2016</P>
+        </PageHeader>
       </article>
     );
   }
