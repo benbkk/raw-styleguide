@@ -8,7 +8,7 @@ import React, { PropTypes } from 'react';
 import styles from './styles.css';
 
 const H5 = (props) =>
-  <h5 className={styles.h5}>
+  <h5 className={styles.h5} {...props}>
     {props.children}
   </h5>;
 

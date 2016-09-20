@@ -13,6 +13,9 @@ import H4 from 'components/H4';
 import H5 from 'components/H5';
 import H6 from 'components/H6';
 import P from 'components/P';
+import Glyph from 'components/Glyph';
+import List from 'components/List';
+import ListItem from 'components/ListItem';
 
 import styles from './styles.css';
 
@@ -29,7 +32,7 @@ export default class Typography extends Component { // eslint-disable-line react
           ]}
         />
         <PageHeader>
-          <H1><span className={styles.pink}>Raw</span>Typography</H1>
+          <H1><span className={styles.pink}>Raw</span> Typography</H1>
           <P>Headlines, paragraphs, and anything text-related</P>
         </PageHeader>
         <section className={styles.pageContent}>
@@ -66,6 +69,58 @@ export default class Typography extends Component { // eslint-disable-line react
               Code
             </code>
           </div>
+        </section>
+        <section className={styles.pageContent}>
+          <H4>Glyphicons</H4>
+          <hr />
+          <div className={styles.mainContent}>
+            <Glyph icon="StarLogo" size={36} />
+          </div>
+          <div className={styles.pageAside}>
+            <code>
+              Code
+            </code>
+          </div>
+        </section>
+        <section className={styles.pageContent}>
+          <H4>List</H4>
+          <hr />
+          <h5>Unordered List</h5>
+          <List type="unordered">
+            <ListItem>
+              Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
+            </ListItem>
+            <ListItem>
+              <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
+              <P>
+                Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
+              </P>
+            </ListItem>
+            <ListItem>
+              <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
+              <P>
+                Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
+              </P>
+            </ListItem>
+          </List>
+          <h5>Ordered List</h5>
+          <List type="ordered">
+            <ListItem>
+              Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
+            </ListItem>
+            <ListItem>
+              <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
+              <P>
+                Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
+              </P>
+            </ListItem>
+            <ListItem>
+              <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
+              <P>
+                Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
+              </P>
+            </ListItem>
+          </List>
         </section>
       </article>
     );

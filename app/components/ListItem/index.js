@@ -6,14 +6,6 @@
 
 import React from 'react';
 
-
-import styles from './styles.css';
-
-function ListItem() {
-  return (
-    <div className={styles.listItem}>
-    </div>
-  );
-}
+const ListItem = (props) => <li {...props} />;
 
 export default ListItem;

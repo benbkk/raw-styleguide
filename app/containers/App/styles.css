@@ -57,3 +57,26 @@ b,
 em {
   font-weight: 700;
 }
+
+ul,
+ol {
+  li {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+  }
+}
+
+ul,
+ol {
+  li {
+    p {
+      margin: 0;
+    }
+  }
+}

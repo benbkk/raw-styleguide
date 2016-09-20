@@ -9,6 +9,8 @@ import React, { PropTypes } from 'react';
 import styles from './styles.css';
 
 const P = (props) => {
+  const pProps = Object.assign({}, props);
+  delete pProps.isLead;
   const paragraphStyle = props.isLead ? styles.pLead : styles.p;
   return (
     <p className={paragraphStyle}>

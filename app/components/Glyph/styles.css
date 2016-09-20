@@ -1,4 +1,9 @@
-svg { /* stylelint-disable */
+/* stylelint-disable */
+svg {
   display: inline-block;
   vertical-align: middle;
+}
+
+icon-* {
+  display:inline-block;
 }

@@ -13,7 +13,11 @@ const Button = (props) => {
     styles.button, props.size, props.color
   );
 
-  let button = <button className={buttonClasses} onClick={props.onClick}>{props.children}</button>;
+  let button = (
+    <button className={buttonClasses} onClick={props.onClick}>
+      {props.children}
+    </button>
+  );
   if (props.href) {
     button = <a className={buttonClasses} href={props.href} onClick={props.onClick}>{props.children}</a>;
   }
@@ -22,7 +26,8 @@ const Button = (props) => {
 
 Button.propTypes = {
   href: PropTypes.string,
-  color: PropTypes.oneOf(['pink', 'grey']),
+  fill: PropTypes.bool,
+  color: PropTypes.oneOf(['pink', 'grey', 'pink']),
   size: PropTypes.oneOf(['small', 'large']),
   classNames: PropTypes.array,
   children: PropTypes.node,

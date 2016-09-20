@@ -10,6 +10,20 @@
   background: yellow;
 }
 
+.listItemTitle {
+  margin: 0;
+}
+
+li {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+li p {
+  margin: 0;
+  font-size: 16px;
+}
+
 @media (min-width: 767px) {
   .mainContent { /* stylelint-disable */
     lost-column: 4/6;
