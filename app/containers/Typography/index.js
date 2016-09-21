@@ -71,6 +71,51 @@ export default class Typography extends Component { // eslint-disable-line react
           </div>
         </section>
         <section className={styles.pageContent}>
+          <H4>List</H4>
+          <hr />
+          <div className={styles.mainContent}>
+            <h5>Unordered List</h5>
+            <List type="unordered">
+              <ListItem>
+                Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
+              </ListItem>
+              <ListItem>
+                <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
+                <P>
+                  Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
+                </P>
+              </ListItem>
+              <ListItem>
+                <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
+                <P>
+                  Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
+                </P>
+              </ListItem>
+            </List>
+            <h5>Ordered List</h5>
+            <List type="ordered">
+              <ListItem>
+                Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
+              </ListItem>
+              <ListItem>
+                <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
+                <P>
+                  Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
+                </P>
+              </ListItem>
+              <ListItem>
+                <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
+                <P>
+                  Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
+                </P>
+              </ListItem>
+            </List>
+          </div>
+          <div className={styles.pageAside}>
+            Code
+          </div>
+        </section>
+        <section className={styles.pageContent}>
           <H4>Glyphicons</H4>
           <hr />
           <div className={styles.mainContent}>
@@ -81,46 +126,6 @@ export default class Typography extends Component { // eslint-disable-line react
               Code
             </code>
           </div>
-        </section>
-        <section className={styles.pageContent}>
-          <H4>List</H4>
-          <hr />
-          <h5>Unordered List</h5>
-          <List type="unordered">
-            <ListItem>
-              Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
-            </ListItem>
-            <ListItem>
-              <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
-              <P>
-                Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
-              </P>
-            </ListItem>
-            <ListItem>
-              <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
-              <P>
-                Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
-              </P>
-            </ListItem>
-          </List>
-          <h5>Ordered List</h5>
-          <List type="ordered">
-            <ListItem>
-              Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
-            </ListItem>
-            <ListItem>
-              <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
-              <P>
-                Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
-              </P>
-            </ListItem>
-            <ListItem>
-              <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
-              <P>
-                Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
-              </P>
-            </ListItem>
-          </List>
         </section>
       </article>
     );
