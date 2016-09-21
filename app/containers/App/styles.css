@@ -49,6 +49,7 @@ html {
 body { /* stylelint-disable */
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-smoothing: antialiased;
+  font-size: 18px;
   color: gray(35%);
   line-height: 1.45;
 }
@@ -58,25 +59,51 @@ em {
   font-weight: 700;
 }
 
-ul,
-ol {
-  li {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin: 0;
-    }
-  }
+li {
+  margin-bottom: 16px;
 }
 
-ul,
+li ol li:first-child,
+li ul li:first-child {
+  margin-top: 16px;
+}
+
+li ol li,
+li ul li {
+  margin-bottom: 16px;
+}
+
+li p {
+  margin: 0;
+}
+
 ol {
-  li {
-    p {
-      margin: 0;
-    }
-  }
+  list-style-type: none;
+  counter-reset: item;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ol li ol li:last-child {
+  margin-bottom: 0;
+}
+
+ol > li {
+  display: table;
+  counter-increment: item;
+  margin-bottom: 0.6em;
+}
+
+ol > li::before {
+  content: counters(item, '.') '. ';
+  display: table-cell;
+  padding-right: 0.6em;
+}
+
+li ol > li {
+  margin-left: 0;
+}
+
+li ol > li::before {
+  content: counters(item, '.') '. ';
 }

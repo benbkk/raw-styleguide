@@ -75,21 +75,29 @@ export default class Typography extends Component { // eslint-disable-line react
           <hr />
           <div className={styles.mainContent}>
             <h5>Unordered List</h5>
-            <List type="unordered">
+            <List>
               <ListItem>
                 Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
               </ListItem>
               <ListItem>
                 <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
-                <P>
-                  Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
-                </P>
+                <p>
+                  Humblebrag everyday carry quinoa, unicorn actually heirloom drinking vinegar occupy. Truffaut hammock intelligentsia, jean shorts blog jianbing VHS mixtape. Lyft occupy synth 3 wolf moon cray pabst. Hot chicken gluten-free tousled, hammock letterpress affogato photo booth cred PBR&B polaroid cray brooklyn ramps prism put a bird on it.
+                </p>
               </ListItem>
               <ListItem>
                 <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
-                <P>
+                <p>
                   Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
-                </P>
+                </p>
+                <List>
+                  <ListItem>
+                    <H6 className={styles.listItemTitle}>This is a nested list item</H6>
+                    <p>
+                      Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
+                    </p>
+                  </ListItem>
+                </List>
               </ListItem>
             </List>
             <h5>Ordered List</h5>
@@ -99,15 +107,25 @@ export default class Typography extends Component { // eslint-disable-line react
               </ListItem>
               <ListItem>
                 <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
-                <P>
+                <p>
                   Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
-                </P>
+                </p>
+                <List type="ordered">
+                  <ListItem>
+                    <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
+                    <p>Quinoa chartreuse distillery kinfolk enamel pin deep v, godard taxidermy sriracha coloring book readymade brooklyn. Fixie selvage distillery helvetica portland brunch. Deep v narwhal organic bushwick health goth vaporware, letterpress meh franzen skateboard echo park asymmetrical tofu.</p>
+                  </ListItem>
+                  <ListItem>
+                    <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
+                    <p>Quinoa chartreuse distillery kinfolk enamel pin deep v, godard taxidermy sriracha coloring book readymade brooklyn. Fixie selvage distillery helvetica portland brunch. Deep v narwhal organic bushwick health goth vaporware, letterpress meh franzen skateboard echo park asymmetrical tofu.</p>
+                  </ListItem>
+                </List>
               </ListItem>
               <ListItem>
                 <H6 className={styles.listItemTitle}>This is a list item with a title</H6>
-                <P>
+                <p>
                   Phasellus maximus est et ultricies fringilla. Mauris posuere, enim a faucibus molestie, felis diam faucibus nibh, nec tincidunt mi lectus vitae est.
-                </P>
+                </p>
               </ListItem>
             </List>
           </div>

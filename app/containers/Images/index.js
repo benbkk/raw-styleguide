@@ -10,17 +10,25 @@ import Helmet from 'react-helmet';
 import selectImages from './selectors';
 import styles from './styles.css';
 
+import PageHeader from 'components/PageHeader';
+import H1 from 'components/H1';
+import P from 'components/P';
+
 export class Images extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div className={styles.images}>
+      <article className={styles.images}>
         <Helmet
           title="Images"
           meta={[
-            { name: 'description', content: 'Description of Images' },
+            { name: 'description', content: 'Image with Imgix Settings' },
           ]}
         />
-      </div>
+        <PageHeader>
+          <H1><span className={styles.pink}>Raw</span> Images</H1>
+          <P>Image component with Imgix</P>
+        </PageHeader>
+      </article>
     );
   }
 }
