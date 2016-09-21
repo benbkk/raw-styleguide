@@ -1,6 +1,7 @@
 /**
 *
-* Icon
+* Glyphs. This code is for presentation purpose on the StyleGuide.
+* If you are looking for rendering the SVG, please refer to components/Icon
 *
 */
 

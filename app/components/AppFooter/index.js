@@ -14,7 +14,7 @@ const AppFooter = () =>
       {'\u00A9'} 2016 Rawpixel Ltd.
     </p>
     <p className={styles.authorMessage}>
-      Hand <Icon name="Code" color="#95a5a6" size={24} /> with <Icon name="Heart" color="red" size={16} /> by Rawpixel WebDev Team. For internal use only.</p>
+      Hand <Icon type="Code" color="#95a5a6" size={24} /> with <Icon type="Heart" color="red" size={16} /> by Rawpixel WebDev Team. For internal use only.</p>
   </footer>;
 
 AppFooter.propTypes = {
