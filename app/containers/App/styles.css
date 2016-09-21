@@ -8,7 +8,8 @@
 
 @lost gutter 18px;
 
-@custom-media --small-viewport (max-width: 600px);
+@global pink #FF38A2;
+@global green #39C;
 
 * {
   box-sizing: border-box;
