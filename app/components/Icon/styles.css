@@ -1,0 +1,14 @@
+.iconWrapper {
+  cursor: pointer;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  padding: 10px 0 0;
+}
+
+.iconName {
+  display: block;
+  margin: 10px 0;
+  font-size: 10px;
+}
