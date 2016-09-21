@@ -13,7 +13,7 @@ import H4 from 'components/H4';
 import H5 from 'components/H5';
 import H6 from 'components/H6';
 import P from 'components/P';
-import Icon from 'components/Icon';
+import Glyph from 'components/Glyph';
 import List from 'components/List';
 import ListItem from 'components/ListItem';
 
@@ -119,26 +119,26 @@ export default class Typography extends Component { // eslint-disable-line react
           <H4>Glyphicons</H4>
           <hr />
           <div className={styles.mainContent}>
-            <Icon name="StarLogo" />
-            <Icon name="Star" />
-            <Icon name="Heart" />
-            <Icon name="Code" />
-            <Icon name="LinkTo" />
-            <Icon name="MenuOld" />
-            <Icon name="Menu" />
-            <Icon name="MenuDots" />
-            <Icon name="Search" />
-            <Icon name="Send" />
-            <Icon name="LinkTo" />
-            <Icon name="Stories" />
-            <Icon name="GridView" />
-            <Icon name="ListView" />
-            <Icon name="Facebook" />
-            <Icon name="GooglePlus" />
-            <Icon name="LinkedIn" />
-            <Icon name="Pinterest" />
-            <Icon name="Twitter" />
-            <Icon name="Instagram" />
+            <Glyph type="StarLogo" />
+            <Glyph type="Star" />
+            <Glyph type="Heart" />
+            <Glyph type="Code" />
+            <Glyph type="LinkTo" />
+            <Glyph type="MenuOld" />
+            <Glyph type="Menu" />
+            <Glyph type="MenuDots" />
+            <Glyph type="Search" />
+            <Glyph type="Send" />
+            <Glyph type="LinkTo" />
+            <Glyph type="Stories" />
+            <Glyph type="GridView" />
+            <Glyph type="ListView" />
+            <Glyph type="Facebook" />
+            <Glyph type="GooglePlus" />
+            <Glyph type="LinkedIn" />
+            <Glyph type="Pinterest" />
+            <Glyph type="Twitter" />
+            <Glyph type="Instagram" />
           </div>
           <div className={styles.pageAside}>
             <code>
