@@ -11,14 +11,11 @@ import styles from './styles.css';
 const H1 = (props) => {
   const headingStyle = props.isUpperCase ? styles.h1UpCase : styles.h1;
   return (
-    <h1 className={headingStyle}>
-      {props.children}
-    </h1>
+    <h1 className={headingStyle} {...props} />
   );
 };
 
 H1.propTypes = {
-  children: PropTypes.node,
   isUpperCase: PropTypes.bool,
 };
 

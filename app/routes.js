@@ -34,6 +34,34 @@ export default function createRoutes(store) {
           .catch(errorLoading);
       },
     }, {
+      path: '/images',
+      name: 'images',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          System.import('containers/Images/reducer'),
+          System.import('containers/Images/sagas'),
+          System.import('containers/Images'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([reducer, sagas, component]) => {
+          injectReducer('images', reducer.default);
+          injectSagas(sagas.default);
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+      },
+    }, {
+      path: '/forms',
+      name: 'forms',
+      getComponent(location, cb) {
+        System.import('containers/Forms')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {

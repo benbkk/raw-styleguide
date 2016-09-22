@@ -1,10 +1,10 @@
-// import Glyph from '../index';
+// import Images from '../index';
 
 import expect from 'expect';
 // import { shallow } from 'enzyme';
 // import React from 'react';
 
-describe('<Icon />', () => {
+describe('<Images />', () => {
   it('Expect to have unit tests specified', () => {
     expect(true).toEqual(false);
   });

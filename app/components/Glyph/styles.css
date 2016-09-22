@@ -1,9 +1,14 @@
-/* stylelint-disable */
-svg {
+.iconWrapper {
+  cursor: pointer;
   display: inline-block;
-  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  padding: 10px 0 0;
 }
 
-icon-* {
-  display:inline-block;
+.iconName {
+  display: block;
+  margin: 10px 0;
+  font-size: 10px;
 }

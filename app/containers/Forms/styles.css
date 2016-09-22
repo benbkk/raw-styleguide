@@ -1,0 +1,16 @@
+.forms { /* stylelint-disable */
+
+}
+
+.pink {
+  color: #FF38A2;
+}
+
+@media (min-width: 767px) {
+  .contentMain {
+    lost-column: 4/6;
+  }
+  .contentAside {
+    lost-column: 2/6;
+  }
+}
