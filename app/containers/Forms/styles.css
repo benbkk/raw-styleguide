@@ -6,6 +6,25 @@
   color: #FF38A2;
 }
 
+.buttonsWrapper {
+  clear: fix;
+}
+
+.buttonsWrapper button:first-of-type {
+  margin-left:0;
+}
+
+.buttonsWrapper .buttonSizes {
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
+.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
 @media (min-width: 767px) {
   .contentMain {
     lost-column: 4/6;
