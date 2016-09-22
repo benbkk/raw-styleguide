@@ -104,7 +104,18 @@ export default class Forms extends Component { // eslint-disable-line react/pref
             Props
           </div>
         </section>
-        <Input />
+        <section className={styles.pageContent}>
+          <H4>Input Text</H4>
+          <hr />
+          <div className={styles.contentMain}>
+            <Input id="inputText" label="Name" placeholder="Your Name" />
+            <Input type="email" id="inputEmail" label="Email" />
+            <Input type="password" id="inputPassword" label="Password" />
+          </div>
+          <div className={styles.contentAside}>
+            Props
+          </div>
+        </section>
       </article>
     );
   }

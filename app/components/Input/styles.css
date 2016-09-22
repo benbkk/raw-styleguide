@@ -1,3 +1,46 @@
-.input { /* stylelint-disable */
+.formGroup { /* stylelint-disable */
+  clear: fix;
+  margin-bottom: 18px;
+}
 
+.controlLabel {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.formControl {
+  width: 100%;
+}
+
+input[type=text],
+input[type="password"],
+input[type="email"],
+textarea {
+  font-size: 16px;
+  transition: 0.2s ease-in-out;
+  border: 1px solid gray(96%);
+  background: gray(96%);
+  box-shadow: none;
+  border-radius: 0;
+  padding: 10px;
+
+  &:focus,
+  &:active {
+    outline: none;
+    background: gray(98%);
+    border-color: #3C9;
+  }
+
+  &::placeholder {
+    color: gray(70%);
+  }
+}
+
+@media (min-width: 767px) {
+  .formControl {
+    width: 50%;
+  }
 }
