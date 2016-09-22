@@ -1,4 +1,5 @@
 /* stylelint-disable */
+
 button,
 .button {
   transition: 0.2s ease-in-out;
@@ -6,18 +7,33 @@ button,
   text-transform: uppercase;
   font-size: 16px;
   cursor: pointer;
-  padding: 9px 18px;
+  padding: 10px 18px;
   letter-spacing: 1px;
-  background-color: #3C9;
-  border: 1px solid #3C9;
+  border: 1px solid transparent;
+  margin:10px;
+  vertical-align:middle;
   &:hover,
   &:active,
   &:focus {
     outline:none;
   }
+}
+
+button.green,
+.button.green {
+  background: #3C9;
+  border-color: #3C9;
   &:hover,
   &:active {
-    background: color(#3C9 blackness(30%));
+    background: color(#3C9 shade(10%));
+  }
+}
 
+button.pink,
+.button.pink {
+  background: #FF38A2;
+  &:hover,
+  &:active {
+    background: color(#FF38A2 shade(10%));
   }
 }

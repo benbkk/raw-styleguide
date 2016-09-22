@@ -9,28 +9,29 @@ import styles from './styles.css';
 import classNames from 'classnames';
 
 const Button = (props) => {
-  const buttonClasses = classNames(
-    styles.button, props.size, props.color
-  );
-
+  const buttonClasses = classNames(styles.button, styles[props.color], styles[props.size]);
   let button = (
-    <button className={buttonClasses} onClick={props.onClick}>
+    <button className={buttonClasses}>
       {props.children}
     </button>
   );
   if (props.href) {
-    button = <a className={buttonClasses} href={props.href} onClick={props.onClick}>{props.children}</a>;
+    button = <a className={buttonClasses} href={props.href}>{props.children}</a>;
   }
   return button;
 };
 
 Button.propTypes = {
   href: PropTypes.string,
-  fill: PropTypes.bool,
-  color: PropTypes.oneOf(['pink', 'grey', 'pink']),
-  size: PropTypes.oneOf(['small', 'large']),
+  color: PropTypes.oneOf(['green', 'grey', 'pink']),
+  size: PropTypes.oneOf(['x-small', 'small', 'large']),
   classNames: PropTypes.array,
   children: PropTypes.node,
+};
+
+Button.defaultProps = {
+  children: 'Hello!',
+  color: 'green',
 };
 
 export default Button;
