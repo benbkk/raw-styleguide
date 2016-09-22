@@ -7,6 +7,14 @@
   padding: 10px 0 0;
 }
 
+.iconWrapper svg {
+  transition: 0.2s ease-in-out;
+}
+
+.iconWrapper:hover svg {
+  fill: #3C9;
+}
+
 .iconName {
   display: block;
   margin: 10px 0;

@@ -91,14 +91,16 @@ export default class Forms extends Component { // eslint-disable-line react/pref
           <H4>Button with Icon</H4>
           <hr />
           <div className={styles.contentMain}>
-            <Button>
-              <Icon type="Facebook" size={16} />
-              <span className={styles.buttonText}>Share</span>
-            </Button>
-            <Button>
-              <Icon type="Twitter" size={16} />
-              <span className={styles.buttonText}>Tweet</span>
-            </Button>
+            <div className={styles.buttonsWrapper}>
+              <Button>
+                <Icon type="Facebook" size={16} />
+                <span className={styles.buttonText}>Share</span>
+              </Button>
+              <Button>
+                <Icon type="Twitter" size={16} />
+                <span className={styles.buttonText}>Tweet</span>
+              </Button>
+            </div>
           </div>
           <div className={styles.contentAside}>
             Props
@@ -109,8 +111,8 @@ export default class Forms extends Component { // eslint-disable-line react/pref
           <hr />
           <div className={styles.contentMain}>
             <Input id="inputText" label="Name" placeholder="Your Name" />
-            <Input type="email" id="inputEmail" label="Email" />
-            <Input type="password" id="inputPassword" label="Password" />
+            <Input type="email" id="inputEmail" label="Email" placeholder="Your Email" />
+            <Input type="password" id="inputPassword" label="Password" placeholder="Password" />
           </div>
           <div className={styles.contentAside}>
             Props
