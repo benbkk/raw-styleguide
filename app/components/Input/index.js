@@ -4,32 +4,29 @@
 *
 */
 
-import React, { Component, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 import styles from './styles.css';
 
-export default class Input extends Component { // eslint-disable-line react/prefer-stateless-function
-  constructor(props) {
-    super(props);
-    this.state = { value: '' };
-  }
-  render() {
-    return (
-      <div className={styles.formGroup}>
-        <label
-          htmlFor={this.props.id}
-          className={styles.controlLabel}
-        />
-        <input
-          className={styles.formControl}
-          value={this.state.value}
-          onChange={(e) => this.setState({ value: e.target.value })}
-        />
-        <p>Value of the input is {this.state.value}</p>
-      </div>
-    );
-  }
-}
+const Input = (props) =>
+  <div className={styles.formGroup}>
+    <label htmlFor={props.id} className={styles.controlLabel}>{props.label}</label>
+    <input id={props.id} type={props.type} className={styles.formControl} placeholder={props.placeholder} {...props} />
+  </div>;
 
 Input.propTypes = {
+  label: PropTypes.string,
   id: PropTypes.string,
+  type: PropTypes.oneOf([
+    'text',
+    'email',
+    'password',
+  ]),
+  placeholder: PropTypes.string,
 };
+
+Input.defaultProps = {
+  label: 'Label',
+  type: 'text',
+};
+
+export default Input;

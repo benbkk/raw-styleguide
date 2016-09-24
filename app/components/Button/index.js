@@ -23,7 +23,7 @@ const Button = (props) => {
 
 Button.propTypes = {
   href: PropTypes.string,
-  color: PropTypes.oneOf(['green', 'grey', 'pink']),
+  color: PropTypes.oneOf(['green', 'gray', 'pink']),
   size: PropTypes.oneOf(['x-small', 'small', 'large']),
   classNames: PropTypes.array,
   children: PropTypes.node,
